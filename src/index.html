@@ -6,32 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>London</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <header class="header">
+    <!-- nav -->
+    <nav class="nav">
         <div class="container">
-            <!-- nav -->
-            <nav class="header__nav">
-                <div class="header__logo">
-                    <h1>London</h1>
+            <div class="nav__logo">
+                <h1>London</h1>
+            </div>
+            <div class="nav__bar">
+                <div class="nav__bar--hamburger">
+                  <span class="nav__bar--hamburger__layer"></span>
                 </div>
-                <div class="header__navbar">
-                    <div class="header__navbar--hamburger"></div>
-                    <div class="header__navbar--list">
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                            <li>Item 4</li>
-                            <li>Item 5</li>
-                            <li>Item 6</li>
-                        </ul>
-                    </div>
+                <div class="nav__bar--list">
+                    <ul>
+                        <li><a href="#header">header</a></li>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#info">Info</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header" class="onepage header header--visible">
+        <div class="container">
 
             <!-- title -->
             <div class="header__title">
@@ -50,7 +54,7 @@
         </div>
     </header>
 
-    <section class="intro">
+    <section id="intro" class="onepage intro">
         <div class="container">
             <!-- info section -->
             <div class="intro__more">
@@ -104,7 +108,7 @@
         </div>
     </section>
 
-    <section class="info">
+    <section id="info" class="onepage info">
         <!-- counting data -->
         <div class="info__data">
             <div class="container">
@@ -153,7 +157,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer id="footer" class="onepage footer">
         <h3>Contact</h3>
         <form>
             <input type="text" placeholder="Name" />

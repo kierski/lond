@@ -15,6 +15,7 @@ const include      = require("gulp-include");
 const spritesmith  = require("gulp.spritesmith");
 const sourcemaps   = require('gulp-sourcemaps');
 const filter       = require('gulp-filter');
+const babel        = require('gulp-babel');
 
 // sprite
 gulp.task('sprite', function() {
@@ -59,6 +60,9 @@ gulp.task('scripts', function() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(include())
+        .pipe(babel({
+          presets: ['es2015']
+        }))
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('src/js/min'));
