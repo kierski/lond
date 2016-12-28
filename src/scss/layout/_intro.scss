@@ -1,4 +1,234 @@
-
 .intro {
-  background-color: white;
+    margin-top: 2em;
+    transition: all 0.2s linear;
+
+    &__more {
+        margin-bottom: 7em;
+        @include clearfix;
+
+        &--photo {
+            float: left;
+            width: 40%;
+            height: 235px;
+            overflow: hidden;
+            margin-right: 2em;
+            position: relative;
+            @include cover;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &--txt {
+            float: left;
+            width: 55%;
+
+            h4 {
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 1.6em;
+                color: $txtColor;
+            }
+        }
+    }
+
+    &__features {
+        margin-bottom: 1em;
+        @include clearfix;
+
+        &__box {
+            cursor: pointer;
+            transition: all 0.5s linear;
+            position: relative;
+
+            &::after {
+                @include gradient($secondColor, $secondColor);
+                transition: all 0.5s ease-in-out;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+                border-color: $lightColor;
+
+                & h5 {
+                    &::before {
+                        background-color: $lightColor;
+                    }
+                    color: $lightColor;
+                }
+            }
+            float: left;
+            width: 190px;
+            height: 175px;
+            margin-left: 3.2em;
+            border: 1px solid $secondColor;
+
+            h5 {
+                z-index: 2;
+                transition: all 0.5s linear;
+
+                &::before {
+                    transition: all 0.5s linear;
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background-color: $secondColor;
+                    position: relative;
+                    left: calc(50% - (40px / 2));
+                    margin-bottom: 15px;
+                }
+                font-size: 1.5em;
+                font-weight: 400;
+                text-align: center;
+                color: $secondColor;
+                position: relative;
+            }
+
+            &--ico {
+                position: relative;
+                z-index: 2;
+                display: block;
+                background-image: url("../images/icons.png");
+                margin-top: 20%;
+                transition: transform 0.5s ease-in-out;
+
+                &_1 {
+                    background-position: $ico-1-offset-x $ico-1-offset-y;
+                    width: $ico-1-width;
+                    height: $ico-1-height;
+                    margin-left: calc(50% - #{$ico-1-width / 2});
+                }
+
+                &_2 {
+                    background-position: $ico-2-offset-x $ico-2-offset-y;
+                    width: $ico-2-width;
+                    height: $ico-2-height;
+                    margin-left: calc(50% - #{$ico-2-width / 2});
+                }
+
+                &_3 {
+                    background-position: $ico-3-offset-x $ico-3-offset-y;
+                    width: $ico-3-width;
+                    height: $ico-3-height;
+                    margin-left: calc(50% - #{$ico-3-width / 2});
+                }
+
+                &_4 {
+                    background-position: $ico-4-offset-x $ico-4-offset-y;
+                    width: $ico-4-width;
+                    height: $ico-4-height;
+                    margin-left: calc(50% - #{$ico-4-width / 2});
+                }
+
+                &_5 {
+                    background-position: $ico-5-offset-x $ico-5-offset-y;
+                    width: $ico-5-width;
+                    height: $ico-5-height;
+                    margin-left: calc(50% - #{$ico-5-width / 2});
+                }
+
+                &_6 {
+                    background-position: $ico-6-offset-x $ico-6-offset-y;
+                    width: $ico-6-width;
+                    height: $ico-6-height;
+                    margin-left: calc(50% - #{$ico-6-width / 2});
+                }
+
+                &_7 {
+                    background-position: $ico-7-offset-x $ico-7-offset-y;
+                    width: $ico-7-width;
+                    height: $ico-7-height;
+                    margin-left: calc(50% - #{$ico-7-width / 2});
+                }
+
+                &_8 {
+                    background-position: $ico-8-offset-x $ico-8-offset-y;
+                    width: $ico-8-width;
+                    height: $ico-8-height;
+                    margin-left: calc(50% - #{$ico-8-width / 2});
+                }
+            }
+        }
+    }
+}
+
+.intro__features__box:hover .intro__features__box--ico {
+    &_1 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-1-offset-x $ico-1-offset-y;
+        width: $ico-hover-1-width;
+        height: $ico-hover-1-height;
+        margin-left: calc(50% - #{$ico-hover-1-width / 2});
+    }
+
+    &_2 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-2-offset-x $ico-hover-2-offset-y;
+        width: $ico-hover-2-width;
+        height: $ico-hover-2-height;
+        margin-left: calc(50% - #{$ico-hover-2-width / 2});
+    }
+
+    &_3 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-3-offset-x $ico-hover-3-offset-y;
+        width: $ico-hover-3-width;
+        height: $ico-hover-3-height;
+        margin-left: calc(50% - #{$ico-hover-3-width / 2});
+    }
+
+    &_4 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-4-offset-x $ico-hover-4-offset-y;
+        width: $ico-hover-4-width;
+        height: $ico-hover-4-height;
+        margin-left: calc(50% - #{$ico-hover-4-width / 2});
+    }
+
+    &_5 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-5-offset-x $ico-hover-5-offset-y;
+        width: $ico-hover-5-width;
+        height: $ico-hover-5-height;
+        margin-left: calc(50% - #{$ico-hover-5-width / 2});
+    }
+
+    &_6 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-6-offset-x $ico-hover-6-offset-y;
+        width: $ico-hover-6-width;
+        height: $ico-hover-6-height;
+        margin-left: calc(50% - #{$ico-hover-6-width / 2});
+    }
+
+    &_7 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-7-offset-x $ico-hover-7-offset-y;
+        width: $ico-hover-7-width;
+        height: $ico-hover-7-height;
+        margin-left: calc(50% - #{$ico-hover-7-width / 2});
+    }
+
+    &_8 {
+        transform: rotate(360deg);
+        background-position: $ico-hover-8-offset-x $ico-hover-8-offset-y;
+        width: $ico-hover-8-width;
+        height: $ico-hover-8-height;
+        margin-left: calc(50% - #{$ico-hover-8-width / 2});
+    }
 }

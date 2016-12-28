@@ -47,8 +47,8 @@
   }
   &__arrow {
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: $lightColor;
     position: absolute;
@@ -57,12 +57,12 @@
     &--content {
       position: absolute;
       display: block;
-      width: 50%;
+      width: 40%;
       height: 2px;
       background-color: $mainColor;
       top: 52%;
-      transform: rotate(124deg);
-      left: 1.9em;
+      transform: rotate(123deg);
+      left: 1.6em;
       &::after {
         content: "";
         display: block;
