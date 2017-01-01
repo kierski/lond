@@ -1,4 +1,8 @@
 
+*:focus {
+    outline: none;
+}
+
 html {
     padding: 0;
     margin: 0;
@@ -35,9 +39,4 @@ body {
   position: relative;
   background-position: center;
   background-size: cover;
-}
-
-/* transition intro section */
-%transition {
-
 }
