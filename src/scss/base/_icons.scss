@@ -1,0 +1,338 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$ico-counting-1-name: 'ico-counting-1';
+$ico-counting-1-x: 250px;
+$ico-counting-1-y: 0px;
+$ico-counting-1-offset-x: -250px;
+$ico-counting-1-offset-y: 0px;
+$ico-counting-1-width: 51px;
+$ico-counting-1-height: 46px;
+$ico-counting-1-total-width: 335px;
+$ico-counting-1-total-height: 258px;
+$ico-counting-1-image: 'icons.png';
+$ico-counting-1: (250px, 0px, -250px, 0px, 51px, 46px, 335px, 258px, 'icons.png', 'ico-counting-1', );
+$ico-counting-2-name: 'ico-counting-2';
+$ico-counting-2-x: 250px;
+$ico-counting-2-y: 56px;
+$ico-counting-2-offset-x: -250px;
+$ico-counting-2-offset-y: -56px;
+$ico-counting-2-width: 51px;
+$ico-counting-2-height: 44px;
+$ico-counting-2-total-width: 335px;
+$ico-counting-2-total-height: 258px;
+$ico-counting-2-image: 'icons.png';
+$ico-counting-2: (250px, 56px, -250px, -56px, 51px, 44px, 335px, 258px, 'icons.png', 'ico-counting-2', );
+$ico-counting-3-name: 'ico-counting-3';
+$ico-counting-3-x: 126px;
+$ico-counting-3-y: 55px;
+$ico-counting-3-offset-x: -126px;
+$ico-counting-3-offset-y: -55px;
+$ico-counting-3-width: 51px;
+$ico-counting-3-height: 48px;
+$ico-counting-3-total-width: 335px;
+$ico-counting-3-total-height: 258px;
+$ico-counting-3-image: 'icons.png';
+$ico-counting-3: (126px, 55px, -126px, -55px, 51px, 48px, 335px, 258px, 'icons.png', 'ico-counting-3', );
+$ico-counting-4-name: 'ico-counting-4';
+$ico-counting-4-x: 193px;
+$ico-counting-4-y: 0px;
+$ico-counting-4-offset-x: -193px;
+$ico-counting-4-offset-y: 0px;
+$ico-counting-4-width: 47px;
+$ico-counting-4-height: 51px;
+$ico-counting-4-total-width: 335px;
+$ico-counting-4-total-height: 258px;
+$ico-counting-4-image: 'icons.png';
+$ico-counting-4: (193px, 0px, -193px, 0px, 47px, 51px, 335px, 258px, 'icons.png', 'ico-counting-4', );
+$ico-hover-1-name: 'ico-hover-1';
+$ico-hover-1-x: 133px;
+$ico-hover-1-y: 172px;
+$ico-hover-1-offset-x: -133px;
+$ico-hover-1-offset-y: -172px;
+$ico-hover-1-width: 58px;
+$ico-hover-1-height: 38px;
+$ico-hover-1-total-width: 335px;
+$ico-hover-1-total-height: 258px;
+$ico-hover-1-image: 'icons.png';
+$ico-hover-1: (133px, 172px, -133px, -172px, 58px, 38px, 335px, 258px, 'icons.png', 'ico-hover-1', );
+$ico-hover-2-name: 'ico-hover-2';
+$ico-hover-2-x: 0px;
+$ico-hover-2-y: 225px;
+$ico-hover-2-offset-x: 0px;
+$ico-hover-2-offset-y: -225px;
+$ico-hover-2-width: 53px;
+$ico-hover-2-height: 33px;
+$ico-hover-2-total-width: 335px;
+$ico-hover-2-total-height: 258px;
+$ico-hover-2-image: 'icons.png';
+$ico-hover-2: (0px, 225px, 0px, -225px, 53px, 33px, 335px, 258px, 'icons.png', 'ico-hover-2', );
+$ico-hover-3-name: 'ico-hover-3';
+$ico-hover-3-x: 0px;
+$ico-hover-3-y: 0px;
+$ico-hover-3-offset-x: 0px;
+$ico-hover-3-offset-y: 0px;
+$ico-hover-3-width: 53px;
+$ico-hover-3-height: 49px;
+$ico-hover-3-total-width: 335px;
+$ico-hover-3-total-height: 258px;
+$ico-hover-3-image: 'icons.png';
+$ico-hover-3: (0px, 0px, 0px, 0px, 53px, 49px, 335px, 258px, 'icons.png', 'ico-hover-3', );
+$ico-hover-4-name: 'ico-hover-4';
+$ico-hover-4-x: 193px;
+$ico-hover-4-y: 61px;
+$ico-hover-4-offset-x: -193px;
+$ico-hover-4-offset-y: -61px;
+$ico-hover-4-width: 24px;
+$ico-hover-4-height: 52px;
+$ico-hover-4-total-width: 335px;
+$ico-hover-4-total-height: 258px;
+$ico-hover-4-image: 'icons.png';
+$ico-hover-4: (193px, 61px, -193px, -61px, 24px, 52px, 335px, 258px, 'icons.png', 'ico-hover-4', );
+$ico-hover-5-name: 'ico-hover-5';
+$ico-hover-5-x: 0px;
+$ico-hover-5-y: 172px;
+$ico-hover-5-offset-x: 0px;
+$ico-hover-5-offset-y: -172px;
+$ico-hover-5-width: 55px;
+$ico-hover-5-height: 43px;
+$ico-hover-5-total-width: 335px;
+$ico-hover-5-total-height: 258px;
+$ico-hover-5-image: 'icons.png';
+$ico-hover-5: (0px, 172px, 0px, -172px, 55px, 43px, 335px, 258px, 'icons.png', 'ico-hover-5', );
+$ico-hover-6-name: 'ico-hover-6';
+$ico-hover-6-x: 250px;
+$ico-hover-6-y: 162px;
+$ico-hover-6-offset-x: -250px;
+$ico-hover-6-offset-y: -162px;
+$ico-hover-6-width: 50px;
+$ico-hover-6-height: 42px;
+$ico-hover-6-total-width: 335px;
+$ico-hover-6-total-height: 258px;
+$ico-hover-6-image: 'icons.png';
+$ico-hover-6: (250px, 162px, -250px, -162px, 50px, 42px, 335px, 258px, 'icons.png', 'ico-hover-6', );
+$ico-hover-7-name: 'ico-hover-7';
+$ico-hover-7-x: 0px;
+$ico-hover-7-y: 59px;
+$ico-hover-7-offset-x: 0px;
+$ico-hover-7-offset-y: -59px;
+$ico-hover-7-width: 57px;
+$ico-hover-7-height: 45px;
+$ico-hover-7-total-width: 335px;
+$ico-hover-7-total-height: 258px;
+$ico-hover-7-image: 'icons.png';
+$ico-hover-7: (0px, 59px, 0px, -59px, 57px, 45px, 335px, 258px, 'icons.png', 'ico-hover-7', );
+$ico-hover-8-name: 'ico-hover-8';
+$ico-hover-8-x: 0px;
+$ico-hover-8-y: 114px;
+$ico-hover-8-offset-x: 0px;
+$ico-hover-8-offset-y: -114px;
+$ico-hover-8-width: 50px;
+$ico-hover-8-height: 48px;
+$ico-hover-8-total-width: 335px;
+$ico-hover-8-total-height: 258px;
+$ico-hover-8-image: 'icons.png';
+$ico-hover-8: (0px, 114px, 0px, -114px, 50px, 48px, 335px, 258px, 'icons.png', 'ico-hover-8', );
+$ico-1-name: 'ico-1';
+$ico-1-x: 65px;
+$ico-1-y: 172px;
+$ico-1-offset-x: -65px;
+$ico-1-offset-y: -172px;
+$ico-1-width: 58px;
+$ico-1-height: 38px;
+$ico-1-total-width: 335px;
+$ico-1-total-height: 258px;
+$ico-1-image: 'icons.png';
+$ico-1: (65px, 172px, -65px, -172px, 58px, 38px, 335px, 258px, 'icons.png', 'ico-1', );
+$ico-2-name: 'ico-2';
+$ico-2-x: 63px;
+$ico-2-y: 225px;
+$ico-2-offset-x: -63px;
+$ico-2-offset-y: -225px;
+$ico-2-width: 53px;
+$ico-2-height: 33px;
+$ico-2-total-width: 335px;
+$ico-2-total-height: 258px;
+$ico-2-image: 'icons.png';
+$ico-2: (63px, 225px, -63px, -225px, 53px, 33px, 335px, 258px, 'icons.png', 'ico-2', );
+$ico-3-name: 'ico-3';
+$ico-3-x: 63px;
+$ico-3-y: 0px;
+$ico-3-offset-x: -63px;
+$ico-3-offset-y: 0px;
+$ico-3-width: 53px;
+$ico-3-height: 49px;
+$ico-3-total-width: 335px;
+$ico-3-total-height: 258px;
+$ico-3-image: 'icons.png';
+$ico-3: (63px, 0px, -63px, 0px, 53px, 49px, 335px, 258px, 'icons.png', 'ico-3', );
+$ico-4-name: 'ico-4';
+$ico-4-x: 311px;
+$ico-4-y: 0px;
+$ico-4-offset-x: -311px;
+$ico-4-offset-y: 0px;
+$ico-4-width: 24px;
+$ico-4-height: 52px;
+$ico-4-total-width: 335px;
+$ico-4-total-height: 258px;
+$ico-4-image: 'icons.png';
+$ico-4: (311px, 0px, -311px, 0px, 24px, 52px, 335px, 258px, 'icons.png', 'ico-4', );
+$ico-5-name: 'ico-5';
+$ico-5-x: 120px;
+$ico-5-y: 114px;
+$ico-5-offset-x: -120px;
+$ico-5-offset-y: -114px;
+$ico-5-width: 55px;
+$ico-5-height: 43px;
+$ico-5-total-width: 335px;
+$ico-5-total-height: 258px;
+$ico-5-image: 'icons.png';
+$ico-5: (120px, 114px, -120px, -114px, 55px, 43px, 335px, 258px, 'icons.png', 'ico-5', );
+$ico-6-name: 'ico-6';
+$ico-6-x: 250px;
+$ico-6-y: 110px;
+$ico-6-offset-x: -250px;
+$ico-6-offset-y: -110px;
+$ico-6-width: 50px;
+$ico-6-height: 42px;
+$ico-6-total-width: 335px;
+$ico-6-total-height: 258px;
+$ico-6-image: 'icons.png';
+$ico-6: (250px, 110px, -250px, -110px, 50px, 42px, 335px, 258px, 'icons.png', 'ico-6', );
+$ico-7-name: 'ico-7';
+$ico-7-x: 126px;
+$ico-7-y: 0px;
+$ico-7-offset-x: -126px;
+$ico-7-offset-y: 0px;
+$ico-7-width: 57px;
+$ico-7-height: 45px;
+$ico-7-total-width: 335px;
+$ico-7-total-height: 258px;
+$ico-7-image: 'icons.png';
+$ico-7: (126px, 0px, -126px, 0px, 57px, 45px, 335px, 258px, 'icons.png', 'ico-7', );
+$ico-8-name: 'ico-8';
+$ico-8-x: 60px;
+$ico-8-y: 114px;
+$ico-8-offset-x: -60px;
+$ico-8-offset-y: -114px;
+$ico-8-width: 50px;
+$ico-8-height: 48px;
+$ico-8-total-width: 335px;
+$ico-8-total-height: 258px;
+$ico-8-image: 'icons.png';
+$ico-8: (60px, 114px, -60px, -114px, 50px, 48px, 335px, 258px, 'icons.png', 'ico-8', );
+$facebook-name: 'facebook';
+$facebook-x: 67px;
+$facebook-y: 59px;
+$facebook-offset-x: -67px;
+$facebook-offset-y: -59px;
+$facebook-width: 31px;
+$facebook-height: 30px;
+$facebook-total-width: 335px;
+$facebook-total-height: 258px;
+$facebook-image: 'icons.png';
+$facebook: (67px, 59px, -67px, -59px, 31px, 30px, 335px, 258px, 'icons.png', 'facebook', );
+$instagram-name: 'instagram';
+$instagram-x: 193px;
+$instagram-y: 123px;
+$instagram-offset-x: -193px;
+$instagram-offset-y: -123px;
+$instagram-width: 31px;
+$instagram-height: 30px;
+$instagram-total-width: 335px;
+$instagram-total-height: 258px;
+$instagram-image: 'icons.png';
+$instagram: (193px, 123px, -193px, -123px, 31px, 30px, 335px, 258px, 'icons.png', 'instagram', );
+$twitter-name: 'twitter';
+$twitter-x: 201px;
+$twitter-y: 172px;
+$twitter-offset-x: -201px;
+$twitter-offset-y: -172px;
+$twitter-width: 29px;
+$twitter-height: 28px;
+$twitter-total-width: 335px;
+$twitter-total-height: 258px;
+$twitter-image: 'icons.png';
+$twitter: (201px, 172px, -201px, -172px, 29px, 28px, 335px, 258px, 'icons.png', 'twitter', );
+$spritesheet-width: 335px;
+$spritesheet-height: 258px;
+$spritesheet-image: 'icons.png';
+$spritesheet-sprites: ($ico-counting-1, $ico-counting-2, $ico-counting-3, $ico-counting-4, $ico-hover-1, $ico-hover-2, $ico-hover-3, $ico-hover-4, $ico-hover-5, $ico-hover-6, $ico-hover-7, $ico-hover-8, $ico-1, $ico-2, $ico-3, $ico-4, $ico-5, $ico-6, $ico-7, $ico-8, $facebook, $instagram, $twitter, );
+$spritesheet: (335px, 258px, 'icons.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

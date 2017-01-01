@@ -1,0 +1,98 @@
+.nav {
+    transition: 0.2s;
+    margin-top: 2.5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+    &__logo {
+        color: $lightColor;
+        text-transform: uppercase;
+        float: left;
+
+        h1 {
+            font-size: 3em;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    &__bar {
+        margin-top: 1em;
+        float: right;
+        position: relative;
+        @include clearfix;
+
+        &--hamburger {
+            transition: 0.5s;
+            float: right;
+            cursor: pointer;
+            padding: 2.6em;
+
+            &__layer {
+                background: $lightColor;
+                display: block;
+                width: 5em;
+                height: 0.2em;
+                position: relative;
+                float: left;
+                /* pseudo elements */
+                &::after {
+                    left: 0;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: -10px;
+                    width: inherit;
+                    height: inherit;
+                    background: $lightColor;
+                }
+
+                &::before {
+                    left: 0;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -10px;
+                    width: inherit;
+                    height: inherit;
+                    background: $lightColor;
+                }
+            }
+        }
+
+        &--list {
+            float: right;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(999em);
+
+            ul {
+                margin-top: 0.9em;
+
+                li {
+                    display: inline-block;
+                    margin: 1em;
+
+                    a {
+                        font-size: 1.4em;
+                        padding: 1em;
+                        text-decoration: none;
+                        color: $lightColor;
+                    }
+                }
+            }
+        }
+    }
+
+    &__animate {
+        &--scroll {
+            margin-top: 0;
+            @include gradient($mainColor, $secondColor);
+        }
+
+        &--list {
+            transform: translateX(0);
+        }
+    }
+    @include clearfix;
+}

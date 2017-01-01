@@ -12,18 +12,18 @@ const imagemin     = require('gulp-imagemin');
 const runSequence  = require('run-sequence');
 const ftp          = require('vinyl-ftp');
 const include      = require("gulp-include");
-const rename       = require("gulp-rename");
 const spritesmith  = require("gulp.spritesmith");
 const sourcemaps   = require('gulp-sourcemaps');
 const filter       = require('gulp-filter');
+const babel        = require('gulp-babel');
 
 // sprite
 gulp.task('sprite', function() {
     var spriteData =
-        gulp.src('src/sprites/**/*.*')
+        gulp.src('src/icons/**/*.*')
             .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: '_sprite.scss',
+                imgName: 'icons.png',
+                cssName: '_icons.scss',
                 algorithm: 'binary-tree',
                 padding: 10
             }));
@@ -60,10 +60,10 @@ gulp.task('scripts', function() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(include())
-        .pipe(uglify())
-        .pipe(rename({
-         suffix: ".min",
+        .pipe(babel({
+          presets: ['es2015']
         }))
+        .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('src/js/min'));
 });

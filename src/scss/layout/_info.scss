@@ -1,0 +1,112 @@
+.info {
+    opacity: 0;
+
+    &__data {
+        height: 335px;
+        color: $lightColor;
+        position: relative;
+        @extend %cover;
+        background-color: $mainColor;
+        background-image: url("../images/info_bg.jpg");
+        padding: 4em 0;
+        @include clearfix;
+
+        &__container {
+            cursor: pointer;
+            margin-top: 10em;
+            position: relative;
+            float: left;
+            margin-left: 11em;
+            text-align: center;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &--ico {
+                display: inline-block;
+                background-image: url("../images/icons.png");
+
+                &-1 {
+                    background-position: $ico-counting-1-offset-x $ico-counting-1-offset-y;
+                    width: $ico-counting-1-width;
+                    height: $ico-counting-1-height;
+                }
+
+                &-2 {
+                    background-position: $ico-counting-2-offset-x $ico-counting-2-offset-y;
+                    width: $ico-counting-2-width;
+                    height: $ico-counting-2-height;
+                }
+
+                &-3 {
+                    background-position: $ico-counting-3-offset-x $ico-counting-3-offset-y;
+                    width: $ico-counting-3-width;
+                    height: $ico-counting-3-height;
+                }
+
+                &-4 {
+                    background-position: $ico-counting-4-offset-x $ico-counting-4-offset-y;
+                    width: $ico-counting-4-width;
+                    height: $ico-counting-4-height;
+                }
+            }
+
+            &--desc {
+                h5 {
+                    letter-spacing: 0.15em;
+                    font-size: 3.5em;
+                    font-weight: bold;
+                    margin: 0.5em 0;
+                }
+
+                h6 {
+                    font-size: 2em;
+                    opacity: 0.7;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__more {
+        margin-top: 7em;
+        @include clearfix;
+
+        &--photo {
+            float: right;
+            width: 50%;
+            height: 311px;
+            overflow: hidden;
+            margin-right: 2em;
+            position: relative;
+            @include cover;
+
+            img {
+                z-index: -1;
+                width: 100%;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        &--txt {
+            float: left;
+            width: 45%;
+
+            h4 {
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 1.6em;
+                color: $txtColor;
+            }
+        }
+    }
+}

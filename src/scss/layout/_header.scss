@@ -1,0 +1,78 @@
+
+.header {
+  @extend %cover;
+  background-color: $mainColor;
+  background-image: url(../images/header/5.jpg);
+  &__title {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &--heading {
+      font-size: 5em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 15%;
+        top: -10%;
+        width: 70%;
+        height: 2px;
+        background-color: white;
+      }
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 15%;
+        bottom: -10%;
+        width: 70%;
+        height: 2px;
+        background-color: white;
+      }
+    }
+    &--hashtags {
+      margin-top: 1em;
+      font-size: 2em;
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+  &__arrow {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $lightColor;
+    position: absolute;
+    bottom: 2.5em;
+    left: 50%;
+    &--content {
+      position: absolute;
+      display: block;
+      width: 40%;
+      height: 2px;
+      background-color: $mainColor;
+      top: 52%;
+      transform: rotate(123deg);
+      left: 1.6em;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        background-color: inherit;
+        transform: rotate(-67deg);
+        transform-origin: right;
+      }
+    }
+  }
+}

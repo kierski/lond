@@ -6,8 +6,13 @@
 @import "base/variables";
 @import "base/mixins";
 @import "base/media-queries";
-@import "base/sprite";
+@import "base/icons";
+@import "base/animate";
 
 /* layout */
 @import "layout/general";
+@import "layout/menu";
 @import "layout/header";
+@import "layout/intro";
+@import "layout/info";
+@import "layout/footer";
